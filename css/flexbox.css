@@ -1,0 +1,186 @@
+/* css da div container do cabeçalho principal */
+.cabecalhoPrincipal .container {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* alinha os itens ao centro */
+    align-items: center;
+    /* colocar um espaço entre os elementos */
+    justify-content: space-between;
+}
+
+/* css da barra de navegação do cabeçalho */
+.cabecalhoPrincipal-nav {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* colocar um espaço entre os elementos */
+    justify-content: space-between;
+}
+
+/* css da section de patrocinadores no rodapé */
+.rodapePrincipal-patrocinadores .container {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* colocar um espaço entre os elementos */
+    justify-content: space-between;
+}
+
+/* css da lista não ordenada dos patrocinadores */
+.rodapePrincipal-patrocinadores-list {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* alinha os itens ao centro */
+    align-items: center;
+    /* colocar um espaço entre os elementos */
+    justify-content: space-between;
+    width: 70%;
+    margin-right: 5%;
+}
+
+/* css do forma de contato do rodapé */
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+/* css da div fieldset */
+.rodapePrincipal-contatoForm-fieldset {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+}
+
+/* css do nav do rodapé */
+.rodapePrincipal-navMap-list {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* flex-direction indica a direção do flex */
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
+    /* flex-flow é a junção de flex-direction e flex-wrap */
+    flex-flow: column wrap;
+    height: 260px;
+}
+
+/* css da lista não orddenada de cursos */
+.conteudoPrincipal-cursos {
+    /* display: flex torna um elemento um flex container */
+    display: flex;
+    /* flex-wrap define se os itens serão obrigados a ficar na mesma linha ou não */
+    flex-wrap: wrap;
+}
+
+/* css dos links dos cursos */
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+    margin: 1%;
+}
+
+/* css para definir as margens laterais do grid de cursos */
+/* lembrando que nth-child() seleciona os elementos na posição em que for colocado entre parenteses*/
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* css para definir as margens laterais do grid de cursos */
+/* lembrando que nth-child() seleciona os elementos na posição em que for colocado entre parenteses*/
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/* css do container do video */
+.videoSobre .container {
+    display: flex;
+}
+
+/* css da div do container do videoSobre */
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* flex-grow faz com que o elemento ocupe um espaço que tenha sobrado no container */
+    flex-grow: 2;
+}
+
+/* css da lista do container videoSobre */
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+/* css do iframe do video */
+.videoSobre-video {
+    flex-grow: 1;
+    flex-shrink: 2;
+} 
+
+/* PARTE MOBILE */
+/* @media serve para idicar que até 768px ele reconhece a págia como mobile e utiliza o código abaixo,
+caso seja maior que 768px ele utiliza o código "padrão" */
+@media(max-width: 768px) {
+
+    /* css da nav do cabeçalho principal */
+    .cabecalhoPrincipal-nav {
+        /* define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido) */
+        flex-direction: column;
+    }
+
+    /* css do container do cabeçalho principal */
+    .cabecalhoPrincipal .container {
+        /* define como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido) */
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    /* css dos links dos cursos */
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+
+    /* css da lista não ordenada de cursos */
+    .conteudoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    /* css do nav do rodapé */
+    .rodapePrincipal-navMap-list {
+        height: auto;
+    }
+
+    /* css da section de patrocinadores no rodapé */
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* css do forma de contato do rodapé */
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    /* css da lista não ordenada dos patrocinadores */
+    .rodapePrincipal-patrocinadores-list {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* css da div fieldset */
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+    /* css do link "Nosso App" da nav do cabeçalho */
+    .cabecalhoPrincipal-nav-link-app {
+        /* order altera a ordem dos intens do container */
+        order: -1;
+    }
+
+    /* css do container do video */
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    /* css do video */
+    .videoSobre-video {
+        margin: 0 auto;
+    }
+
+}
