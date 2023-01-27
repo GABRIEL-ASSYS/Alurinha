@@ -2,7 +2,11 @@
 
   A  Alurinha é um projeto criado durante um curso de HTML e CSS na plataforma Alura, com o objetivo de auxiliar no aprendizado de desenvolvimento WEB utilizando as linguagens HTML5 e CSS3, sendo uma página WEB que tem o mesmo propósito da Alura, sendo uma plataforma de ensino, contendo alguns cursos e formações e formas de contato.
 
+## Cabeçalho e cursos:
 ![print da página](https://github.com/GABRIEL-ASSYS/Alurinha/blob/main/img/print.png)
+
+## Vídeo, cadastro e rodapé:
+![print da página](https://github.com/GABRIEL-ASSYS/Alurinha/blob/main/img/print%202.png)
 
 ## 🚀 Começando
 
